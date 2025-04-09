@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "github.com/modelcontextprotocol/servers/tree/main/src/github": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "mcp/github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<REDACTED>"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "push_files",
+        "create_or_update_file",
+        "search_repositories",
+        "get_file_contents",
+        "get_repo_details",
+        "create_repository"
+      ]
+    }
+  }
+}
